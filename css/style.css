@@ -8,10 +8,10 @@
 
 /* Colors */         
 --color-white: #f8f8f8;
---color-black: #1C1B19;
+--color-black: #171717ec;
 --color-orange: #F8771F;
 --color-purple: #6B6AB0;
---color-gray: #65676B;
+--color-gray: #1f1f1f;
 
 /* Size */
 --size-max-width: 1200px
@@ -173,5 +173,91 @@ button:focus {
     margin-bottom: 1rem;
 }
 .major:hover .major__icon {
-    transform: rotate(-15deg) scale(1.2);
+    transform: rotate(-9deg) scale(1.2);
+}
+/* Skills */
+#skills {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+.skills {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    margin: 2rem 3rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
+
+}
+.skills__title {
+    color: var(--color-accent);
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+.skills__coding {
+    grid-row: span 2;
+    padding: 1rem;
+    background-color: var(--color-primary);
+}
+.skills__tools {
+    padding: 1rem;
+
+}
+.skills__etc {
+    padding: 2rem;
+    background-color: var(--color-primary);
+    filter: brightness(150%);        
+
+}
+.skills__title div {
+    padding: 1rem;
+    display: inline-block; 
+    text-align: center; 
+    justify-content: space-between;
+}
+
+/* Work */
+#achievements {
+    background-color: var(--color-gray);
+    color: var(--color-text);
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem;
+    gap: 1rem;
+}
+.category   {
+    color: var(--color-text);
+    font-size: 1.3rem;
+    padding: 0.5rem 2.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-accent);
+    cursor: pointer;
+}
+.category__selected {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+/* Goal */
+.goals {
+    margin: 3rem;
+}
+.goal {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.goal:nth-child(even) .goal__img {
+    order: 1
+}
+.goal__img {
+    font-size: 120px;
+    /* box-shadow: 0 8px 30px rgba(26, 25, 25, 0.12); */
+}
+.goal__bubble {
+    padding: 1rem;
+    border-radius: 8ox;
+    box-shadow: 6px -11px 38px 0px #2d3748
 }
