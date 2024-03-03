@@ -1,0 +1,46 @@
+/* Global */
+:root {
+    /* App colors */
+--color-primary: var(--color-black);
+--color-primary-variant: var(--color-purple);
+--color-accent: var(--color-orange);
+--color-text: var(--color-white);
+
+    /* Colors */         
+--color-white: #f8f8f8;
+--color-black: #1C1B19;
+--color-orange: #F8771F;
+--color-purple: #6B6AB0;
+--color-gray: #65676B;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+ 
+h1, h2, h3, p, ul {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+button {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+button:focus {
+    outline: 1px solid var(--color-accent)
+}
