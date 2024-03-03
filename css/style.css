@@ -1,18 +1,22 @@
 /* Global */
 :root {
-    /* App colors */
+/* App colors */
 --color-primary: var(--color-black);
 --color-primary-variant: var(--color-purple);
 --color-accent: var(--color-orange);
 --color-text: var(--color-white);
 
-    /* Colors */         
+/* Colors */         
 --color-white: #f8f8f8;
 --color-black: #1C1B19;
 --color-orange: #F8771F;
 --color-purple: #6B6AB0;
 --color-gray: #65676B;
+
+/* Size */
+--size-max-width: 1200px
 }
+
 
 * {
     box-sizing: border-box;
@@ -57,6 +61,10 @@ button:focus {
 .description {
     font-size: 1.5rem;
     margin: 0.5rem 0;
+}
+.max-container {
+    max-width: var(--size-max-width);
+    margin: 0 auto;
 }
 /* Header */
 .header {
@@ -136,4 +144,34 @@ button:focus {
 .home__contact:hover {
     background-color: transparent;
     outline: 2px solid var(--color-accent);
+}
+/* about */
+.majors {
+    display: flex;
+    gap: 3rem;
+    margin: 2.5rem 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+.major {
+    background-color: var(--color-primary);
+    padding: 2rem 1rem;
+    color: var(--color-text);
+    border-radius: 1rem;
+    cursor: default;
+    box-shadow: 0 20px 50px rgba(188, 182, 255, 0.7);
+}
+.major__icon {
+    font-size: 4rem;
+    color: var(--color-primary-variant);
+    margin: 1rem 0;
+    transition: all 300ms ease-in;
+}
+.major__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.major:hover .major__icon {
+    transform: rotate(-15deg) scale(1.2);
 }
