@@ -101,10 +101,7 @@ button:focus {
 .header__menu__item:hover {
     border-bottom: 2px solid var(--color-primary-variant);
 } 
-.header__menu__item.active {
-    border: 1px solid var(--color-primary-variant);
-    border-radius: 6px;
-}
+
 /* Home */
 #home {
     background-color: var(--color-primary);
@@ -183,10 +180,12 @@ button:focus {
 .skills {
     display: grid;
     grid-template-columns: 6fr 4fr;
-    margin: 2rem 3rem;
+    margin: 4rem 3rem;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    
+    
 
 }
 .skills__title {
@@ -196,7 +195,7 @@ button:focus {
 }
 .skills__coding {
     grid-row: span 2;
-    padding: 1rem;
+    padding: 2rem;
     background-color: var(--color-primary);
 }
 .skills__tools {
@@ -216,29 +215,6 @@ button:focus {
     justify-content: space-between;
 }
 
-/* Work */
-#achievements {
-    background-color: var(--color-gray);
-    color: var(--color-text);
-}
-.categories {
-    display: flex;
-    justify-content: center;
-    margin: 2.5rem;
-    gap: 1rem;
-}
-.category   {
-    color: var(--color-text);
-    font-size: 1.3rem;
-    padding: 0.5rem 2.5rem;
-    border-radius: 4px;
-    border: 1px solid var(--color-accent);
-    cursor: pointer;
-}
-.category__selected {
-    background-color: var(--color-accent);
-    color: var(--color-primary);
-}
 /* Goal */
 .goals {
     margin: 3rem;
