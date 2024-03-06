@@ -197,6 +197,7 @@ button:focus {
     grid-row: span 2;
     padding: 2rem;
     background-color: var(--color-primary);
+    font-size: x-large;
 }
 .skills__tools {
     padding: 1rem;
@@ -214,6 +215,10 @@ button:focus {
     text-align: center; 
     justify-content: space-between;
 }
+.skills__coding a {
+    padding-bottom: 7px;
+}
+
 
 /* Goal */
 .goals {
