@@ -259,7 +259,8 @@ button:focus {
 }
 /* Footer */
 #contact {
-    background-color: var(--color-primary);
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(50,15,71,1) 100%, rgba(58,16,108,1) 100%);
     color: var(--color-text);
 }
 .contact__links {
